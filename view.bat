@@ -7,9 +7,9 @@
 ::pause
 
 :: 2023년 6월 14일 수요일 오전 8:40:52 ::
-C:\subsonic\transcode\ffmpeg64 -i %1 -f metadata 1>c:\temp\result.txt 2>c:\temp\lyrics.txt
+\ffmpeg -i %1 -f metadata 1>\T\result.txt 2>\T\lyrics.txt
 ::notepad c:\temp\lyrics.txt
-start notepad c:\temp\lyrics.txt
+start notepad \t\lyrics.txt
 exit
 
 :: 2023년 6월 14일 수요일 오전 9:13:17 ::
